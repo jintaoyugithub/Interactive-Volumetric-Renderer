@@ -33,7 +33,3 @@ Note: both of them need a volume matrial in UE
 ### Optimization
 
 - Calculate the right size of the volume box
-
-## Thoughts
-
-- Voxelization Renderer?
