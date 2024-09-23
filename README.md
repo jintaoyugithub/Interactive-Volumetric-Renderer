@@ -1,4 +1,4 @@
-# Voxel Based Volumetric Renderer
+# Interactive Volumetric Renderer
 
 ## Quick Start
 
