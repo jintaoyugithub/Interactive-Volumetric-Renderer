@@ -6,6 +6,8 @@
 - Use SDF (Signed Distance Function) to simulate volume
 - 3D Noise generator
 - How to add collision volume in OpenGL?
+- Interaction plugin?
+- height rvt(runtime virtual texture)
 
 ## TODO Lists
 
@@ -33,13 +35,17 @@
 - [Notes of Monte Carlo methods for phyically based volume rendering](https://zhuanlan.zhihu.com/p/508639472)
 - [Accelerate particle rendering by using VDM](https://zhuanlan.zhihu.com/p/24801448)
 
-### Irrelevant
+#### Interaction Methods
+- [Unreal Engine Render Target](https://zhuanlan.zhihu.com/p/361361557)
+- [How to use UE to make a 3A level interactive deformable snow](https://zhuanlan.zhihu.com/p/685176003)
+- [Interactive Grass in UE(Vector Field)](https://zhuanlan.zhihu.com/p/362460823)
+
+#### Irrelevant
 - [Screen-Based Rendering Method for liquid](https://zhuanlan.zhihu.com/p/38280537)
 - [Scratchapixel](https://www.scratchapixel.com/)
 - [Water Rendering Tech](https://zhuanlan.zhihu.com/p/95917609)
 - [Rendering Equation Explanation](https://zhuanlan.zhihu.com/p/52497510)
 - [Deffered Rendering](https://zhuanlan.zhihu.com/p/102134614)
-
 
 ### Videos
 - [Digital Mind](https://www.youtube.com/@digitalmind6236)
@@ -47,6 +53,10 @@
 - [Particle System in C++ and OpenGL Part 01](https://www.youtube.com/watch?v=4YhQJPD7ylQ)
 - [OpenGL 8 Million Particles Simulation](https://www.youtube.com/watch?v=NhnoNYqIhTI)
 - [Making a particle system in one hour](https://www.youtube.com/watch?v=GK0jHlv3e3w)
+- [Returnal - VFX breakdown](https://www.youtube.com/watch?v=WdGg5QYybJU)
+
+#### Interaction Methods
+- [UE5 interaction plugin](https://www.youtube.com/watch?v=3VfhvULu2k4)
 
 ### Papers
 - [Fog simulation algorithm with particles](https://www.cs.rpi.edu/~cutler/classes/advancedgraphics/S07/final_projects/fischc/fog_simulation.html)

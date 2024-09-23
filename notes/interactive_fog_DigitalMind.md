@@ -28,7 +28,7 @@ Note: both of them need a volume matrial in UE
 
 - Field of particle
 - Full fluid simulation
-- Mask Texture
+- Mask Texture(Render Target)
 
 ### Optimization
 
