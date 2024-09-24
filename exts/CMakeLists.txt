@@ -1,9 +1,13 @@
+# Set C++ Language Standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 # bgfx
 set( BGFX_BUILD_TOOLS     ON  CACHE INTERNAL "" )
 set( BGFX_BUILD_EXAMPLES  OFF CACHE INTERNAL "" )
 set( BGFX_CUSTOM_TARGETS  OFF CACHE INTERNAL "" )
 add_subdirectory( bgfx.cmake )
-include( ./bgfx.cmake/cmake/bgfx/util/ConfigureDebugging.cmake)
+include( "./bgfx.cmake/cmake/bgfx/util/ConfigureDebugging.cmake" )
 
 # glfw
 set( GLFW_BUILD_EXAMPLES  OFF CACHE INTERNAL "" )

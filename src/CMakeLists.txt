@@ -19,7 +19,7 @@ add_library(
 target_include_directories(
     ${LIB_NAME}
     PUBLIC
-    ${CMAKE_SOURCE_DIR}/include
+    "${CMAKE_SOURCE_DIR}/include"
 )
 
 # link necessary libs
