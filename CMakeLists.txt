@@ -1,4 +1,7 @@
-cmake_minimum_required(VERSION 3.5.0)
+cmake_minimum_required(VERSION 3.30.0)
+
+# generate compile_commands.json for lsp
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 project(
     Interactive-Volumetric-Renderer 
@@ -22,6 +25,7 @@ if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")
         endif()
     endif()
 endif()
+
 
 add_subdirectory(exts)
 add_subdirectory(src)

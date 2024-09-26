@@ -14,6 +14,9 @@ if(IVR_SOURCES)
         ${PROJECT_NAME}
         PUBLIC
         "${CMAKE_SOURCE_DIR}/include"
+        "${CMAKE_SOURCE_DIR}/exts/bgfx.cmake/bgfx/include"
+        "${CMAKE_SOURCE_DIR}/exts/bgfx.cmake/bimg/include"
+        "${CMAKE_SOURCE_DIR}/exts/bgfx.cmake/bx/include"
     )
 
     # link necessary libs
