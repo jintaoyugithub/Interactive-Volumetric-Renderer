@@ -3,7 +3,7 @@
  * License: https://github.com/bkaradzic/bgfx/blob/master/LICENSE
  */
 
-#include <common.h>
+#include "common.h"
 
 #include <tinystl/allocator.h>
 #include <tinystl/vector.h>
@@ -16,10 +16,10 @@ namespace stl = tinystl;
 #include <bx/math.h>
 #include <bx/readerwriter.h>
 #include <bx/string.h>
-#include <entry/entry.h>
+#include "entry/entry.h"
 #include <meshoptimizer/src/meshoptimizer.h>
 
-#include <util/bgfx_utils.h>
+#include "bgfx_utils.h"
 
 #include <bimg/decode.h>
 
