@@ -1,4 +1,3 @@
-#include <__config>
 #include <iostream>
 #include <test.hpp>
 #include <util/configuration.hpp>
@@ -21,7 +20,7 @@ int main(int, char **) {
       glfwCreateWindow(800, 600, "hellp bgfx", nullptr, nullptr);
 
   bgfx::PlatformData pd;
-  pd.nwh = glfwGetCocoaWindow(window);
+  pd.nwh = glfwGetWin32Window(window);
   bgfx::setPlatformData(pd);
 
   bgfx::Init bgfxInit;
