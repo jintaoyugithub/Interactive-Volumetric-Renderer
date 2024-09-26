@@ -14,7 +14,6 @@
 #include <bgfx/bgfx.h>
 #include <bgfx/platform.h>
 
-#include <bgfx_utils.h>
 
 int main(int, char **) {
   glfwInit();
@@ -22,8 +21,8 @@ int main(int, char **) {
       glfwCreateWindow(800, 600, "hellp bgfx", nullptr, nullptr);
 
   bgfx::PlatformData pd;
-  // pd.nwh = glfwGetWin32Window(window);
-  pd.nwh = glfwGetCocoaWindow(window);
+  pd.nwh = glfwGetWin32Window(window);
+  //pd.nwh = glfwGetCocoaWindow(window);
   bgfx::setPlatformData(pd);
 
   bgfx::Init bgfxInit;
