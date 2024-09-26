@@ -6,7 +6,12 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 project(
   Interactive-Volumetric-Renderer
   VERSION 0.1.0
-  LANGUAGES C CXX)
+  LANGUAGES C CXX
+)
+    
+# Set C++ Language Standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Update submodules automatically
 find_package(Git QUIET)
