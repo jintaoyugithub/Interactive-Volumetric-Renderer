@@ -1,17 +1,14 @@
-set(
-    SOURCES
-    test.cpp
-    "./utils/bgfx_utils.cpp"
+# set(
+#     SOURCES
+#     test.cpp
+#     "./utils/bgfx_utils.cpp"
+# )
+
+file(
+   GLOB_RECURSE
+   SOURCES
+   "*.cpp"
 )
-
-#file(
-#    GLOB_RECURSE
-#    SOURCES
-#    "*.cpp"
-#)
-
-# remove entry_windows.cpp cause it has a main function
-# list(REMOVE_ITEM SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/utils/entry/entry_windows.cpp")
 
 set(
     LIB_NAME
@@ -32,12 +29,6 @@ target_include_directories(
     "${CMAKE_SOURCE_DIR}/include"
     "${CMAKE_SOURCE_DIR}/src/utils"
     "${CMAKE_SOURCE_DIR}/exts/bgfx.cmake/bgfx/3rdparty"
-)
-
-target_sources(
-    ${LIB_NAME}
-    PUBLIC
-    ${COMMON_SRC}
 )
 
 # link necessary libs
