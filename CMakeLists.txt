@@ -13,6 +13,9 @@ project(
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# specific for mac arm
+set(CMAKE_OSX_ARCHITECTURES "arm64")
+
 # Update submodules automatically
 find_package(Git QUIET)
 if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")

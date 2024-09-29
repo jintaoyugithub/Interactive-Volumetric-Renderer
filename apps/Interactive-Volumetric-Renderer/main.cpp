@@ -279,8 +279,11 @@ public:
 
 } // namespace
 
-int main(int _argc, char **_argv) {
-  using namespace entry;
-  ExampleCubes cubes{"example cubes", "create some cubes", "none"};
-  runApp(&cubes, _argc, _argv);
-}
+/*int main(int _argc, char **_argv) {*/
+/*  using namespace entry;*/
+/*  ExampleCubes cubes{"example cubes", "create some cubes", "none"};*/
+/*  runApp(&cubes, _argc, _argv);*/
+/*}*/
+
+ENTRY_IMPLEMENT_MAIN(ExampleCubes, "01-cubes", "Rendering simple static mesh.",
+                     "https://bkaradzic.github.io/bgfx/examples.html#cubes");

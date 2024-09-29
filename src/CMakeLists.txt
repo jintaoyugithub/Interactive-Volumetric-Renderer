@@ -1,19 +1,29 @@
-# set(
-#     SOURCES
-#     test.cpp
-#     "./utils/bgfx_utils.cpp"
-# )
-
-file(
-   GLOB_RECURSE
-   SOURCES
-   "*.cpp"
+set(
+    SOURCES
+    "./utils/bgfx_utils.cpp"
+    "./utils/entry/entry.cpp"
+    "./utils/entry/cmd.cpp"
+    "./utils/entry/input.cpp"
 )
+
+# file(
+#    GLOB_RECURSE
+#    SOURCES
+#    "*.cpp"
+# )
 
 set(
     LIB_NAME
     "IVR-LIB"
 )
+
+# Necessary for xos api NSWindow and dispatch_sync
+find_library(COCOA_LIBRARY Cocoa)
+find_library(FOUNDATION_LIBRARY Foundation)
+
+# specific for mac arm
+set(CMAKE_OSX_ARCHITECTURES "arm64")
+
 
 # Don't forget the static
 add_library(
@@ -41,4 +51,6 @@ target_link_libraries(
     imgui
     glfw
     glm
+    ${COCOA_LIBRARY} 
+    ${FOUNDATION_LIBRARY}
 )
