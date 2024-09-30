@@ -4,9 +4,14 @@
  */
 
 #include <bx/uint32_t.h>
+#include <entry/entry.h>
 #include <util/bgfx_utils.h>
 #include <util/common.h>
 #include <util/imgui/imgui.h>
+
+#include <filesystem>
+#include <iostream>
+#include <string>
 
 static const uint8_t s_logo[4000] = {
     0xdc, 0x03, 0xdc, 0x03, 0xdc, 0x03, 0xdc, 0x03,
@@ -521,6 +526,13 @@ public:
 
   void init(int32_t _argc, const char *const *_argv, uint32_t _width,
             uint32_t _height) override {
+    // reset current dir
+    std::filesystem::path pth =
+        std::filesystem::current_path().parent_path().parent_path() / "assets";
+    std::string pth_s = pth.string();
+    std::cout << pth_s << std::endl;
+    entry::setCurrentDir(pth_s.c_str());
+
     Args args(_argc, _argv);
 
     m_width = _width;
