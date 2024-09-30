@@ -1,28 +1,12 @@
 set(
     SOURCES
-    "./utils/bgfx_utils.cpp"
-    "./utils/entry/entry.cpp"
-    "./utils/entry/cmd.cpp"
-    "./utils/entry/input.cpp"
+    "./utils/test.cpp"
 )
-
-# file(
-#    GLOB_RECURSE
-#    SOURCES
-#    "*.cpp"
-# )
 
 set(
     LIB_NAME
     "IVR-LIB"
 )
-
-# Necessary for xos api NSWindow and dispatch_sync
-find_library(COCOA_LIBRARY Cocoa)
-find_library(FOUNDATION_LIBRARY Foundation)
-
-# specific for mac arm
-set(CMAKE_OSX_ARCHITECTURES "arm64")
 
 
 # Don't forget the static
@@ -37,7 +21,6 @@ target_include_directories(
     ${LIB_NAME}
     PUBLIC
     "${CMAKE_SOURCE_DIR}/include"
-    "${CMAKE_SOURCE_DIR}/src/utils"
     "${CMAKE_SOURCE_DIR}/exts/bgfx.cmake/bgfx/3rdparty"
 )
 
@@ -48,9 +31,9 @@ target_link_libraries(
     bx
     bimg
     bgfx
-    imgui
     glfw
     glm
-    ${COCOA_LIBRARY} 
-    ${FOUNDATION_LIBRARY}
+    ${CMAKE_DL_LIBS}
+    bimg_decode
+    example-common
 )
