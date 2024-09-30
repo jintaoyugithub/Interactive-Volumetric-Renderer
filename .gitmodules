@@ -1,9 +1,9 @@
-[submodule "exts/bgfx.cmake"]
-	path = exts/bgfx.cmake
-	url = https://github.com/bkaradzic/bgfx.cmake.git
 [submodule "exts/glfw"]
 	path = exts/glfw
 	url = https://github.com/glfw/glfw.git
 [submodule "exts/glm"]
 	path = exts/glm
 	url = https://github.com/g-truc/glm.git
+[submodule "exts/llgl"]
+	path = exts/llgl
+	url = https://github.com/LukasBanana/LLGL.git

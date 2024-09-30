@@ -21,19 +21,14 @@ target_include_directories(
     ${LIB_NAME}
     PUBLIC
     "${CMAKE_SOURCE_DIR}/include"
-    "${CMAKE_SOURCE_DIR}/exts/bgfx.cmake/bgfx/3rdparty"
+    "${CMAKE_SOURCE_DIR}/exts/llgl/include"
 )
 
 # link necessary libs
 target_link_libraries( 
     ${LIB_NAME}
     PUBLIC
-    bx
-    bimg
-    bgfx
     glfw
     glm
-    ${CMAKE_DL_LIBS}
-    bimg_decode
-    example-common
+    LLGL
 )

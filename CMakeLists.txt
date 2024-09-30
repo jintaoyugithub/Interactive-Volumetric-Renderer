@@ -33,4 +33,4 @@ endif()
 
 add_subdirectory(exts)
 add_subdirectory(src)
-add_subdirectory(apps)
+add_subdirectory(app)
