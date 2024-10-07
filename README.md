@@ -92,3 +92,7 @@
 - [bgfx example: N-body simulation with compute shader](https://github.com/bkaradzic/bgfx/tree/master/examples/24-nbody)
 - [Particle Simulator](https://github.com/BoyBaykiller/Newtonian-Particle-Simulator)
 - [Compute Shader Particle Simulation](https://github.com/MauriceGit/Partikel_accelleration_on_GPU?tab=readme-ov-file)
+
+### Particle System with OpenGL
+- [Making a PARTICLE SYSTEM in ONE HOUR!](https://www.youtube.com/watch?v=GK0jHlv3e3w)
+  
