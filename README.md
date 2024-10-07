@@ -95,4 +95,9 @@
 
 ### Particle System with OpenGL
 - [Making a PARTICLE SYSTEM in ONE HOUR!](https://www.youtube.com/watch?v=GK0jHlv3e3w)
+- [Particle Simulation With OpenGL](https://www.youtube.com/watch?v=t-e8PBRPL6w)
+- [Creating a Particle System From Scratch in C++ and OpenGL Part 01 | Adventures in Coding](https://www.youtube.com/watch?v=4YhQJPD7ylQ)
+- [OpenGL 3D Game Tutorial 35: Animating Particle Textures](https://www.youtube.com/watch?v=POEzdiqEESo)
+- [Million-scale particle system](https://www.bilibili.com/video/BV1Cy421v7hk/?spm_id_from=333.337.search-card.all.click&vd_source=8ae564f5ebb0fa225b0c178e52146778)
+  
   
