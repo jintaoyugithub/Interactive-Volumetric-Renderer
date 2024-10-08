@@ -78,8 +78,13 @@ int main() {
     fragShader = renderer->CreateShader(fsDesc);
 
     for (LLGL::Shader *shader : {vertShader, fragShader}) {
-      if (const LLGL::Report *report = shader->GetReport())
-        LLGL::Log::Errorf("%s", report->GetText());
+      if (const LLGL::Report *report = shader->GetReport()) {
+        if (report->HasErrors()) {
+          std::cerr << report->GetText() << std::endl;
+        } else {
+          std::cout << report->GetText() << std::endl;
+        }
+      }
     }
 
     // Create graphics pipeline
